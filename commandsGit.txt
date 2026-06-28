@@ -1,0 +1,46 @@
+1.  Environment setup commands
+git config --global user.name "name" sets the name
+git config --global user.email "email" sets the email
+git config --global core.editor "code --wait" code is the coding workbench and --wait command is for waiting
+git config --global core.autocrfl is also for something
+
+2. CHECKING THE ENVIRONMENT 
+git --global -e we can even edit the saved environment things like the name or the email and further on
+
+3. TO CHECK WHERE WE ARE IN THE COMMITTED FILE
+git log --oneline tells u on which check point you actually are
+
+4. GIT RESET COMMANDS TO DELETE THE CURRENT CHECKPOINT AND GO TO A PREVIOUS ONE
+
+git reset --hard HEAD~1, 2 or any amount of checkpoints you wanna delete
+
+git reset --soft HEAD~1 : takes the pointer a step back without deleting anything
+
+5. GIT CLONING
+to clone a repositry from github to our local [laptop/pc], we use the clone command
+
+git clone linkOfRepo
+
+6. TO ACCESS ANOTHER FILE INSIDE A FILE
+cd name of the file
+
+7. CHECKOUT COMMAND
+git checkout 
+to jump from one checkpoint to another
+
+8. ADDING A REMOTE VERSION OF THE REPO TO THE FILE
+git remote nameOfChoosing main linkOfRepo
+git branch -M main
+git push -u origin main
+
+9. CREATING A BRANCH
+git branch branch-name
+
+-to automatically create and jump to that branch run
+git branch -b branch-name
+
+-to inherit the data from another branch run
+git branch new-branch anyother-branch
+
+10. DIRECTLY UPDATING SOMETHING FROM A FILE TO A SPECIFIC branch
+ add `branch-name`
