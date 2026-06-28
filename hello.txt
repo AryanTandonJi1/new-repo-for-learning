@@ -1,1 +1,2 @@
 this is the text inside hello.txt
+now i am in the middle of something important
